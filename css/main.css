@@ -790,6 +790,11 @@ JOB LIST COLUMN
   line-height: 18px;
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  #job-list-column .job p.job-excerpt {
+    display: none;
+  }
+}
 #job-list-column .job .job-locations {
   margin-top: 10px;
   font-size: 13px;
