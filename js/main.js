@@ -33,9 +33,7 @@ $(function(){
 
         if( $window.width() > 1110 ){
             $('.job-filter-column').show();
-        } else{
-            $('.job-filter-column').hide();
-        }
+        } 
 
         $('#mobile-nav, .mobile-nav-btn, #main').removeClass('active');
         $('body').removeClass('no-scroll');
