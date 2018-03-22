@@ -3,7 +3,7 @@ $(function(){
     var $window = $(window);
     
 
-    $('.mobile-filter-toggle').on('click', function(){
+    $('.mobile-filter-toggle button').on('click', function(){
 
         $('.job-filter-column').slideToggle('fast');
 

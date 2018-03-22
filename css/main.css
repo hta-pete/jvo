@@ -703,23 +703,6 @@ JOB FILTER COLUMN
 .mobile-filter-toggle {
   display: none;
   margin-bottom: 20px;
-  width: 100%;
-  height: 40px;
-  border: none;
-  border-radius: 6px;
-  background: #1b7de4;
-  color: white;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 40px;
-  text-align: center;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  -webkit-transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  -moz-transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  -ms-transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 @media (max-width: 1110px) {
   .mobile-filter-toggle {
@@ -731,7 +714,23 @@ JOB FILTER COLUMN
     margin-bottom: 10px;
   }
 }
-.mobile-filter-toggle:hover {
+.mobile-filter-toggle button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background: yellow;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.mobile-filter-toggle button:hover {
   background: #1769c0;
 }
 
