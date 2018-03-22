@@ -41,6 +41,11 @@ $(function(){
         $('body').removeClass('no-scroll');
 
     });
+    if( $window.width() > 1110 ){
+        $('.job-filter-column').show();
+    } else{
+        $('.job-filter-column').hide();
+    }
 
 	
 });
