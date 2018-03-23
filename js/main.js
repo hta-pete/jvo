@@ -38,7 +38,7 @@ $(function(){
         if( $window.width() > 1110 ){
             $('.job-filter-column').css('display','block');
         } else{
-            $('.job-filter-column').css('display','none');
+            //$('.job-filter-column').css('display','none');
         }
 
         $('#mobile-nav, .mobile-nav-btn, #main').removeClass('active');
@@ -48,7 +48,7 @@ $(function(){
     
     if( $window.width() < 1110 ){
         //$('.job-filter-column').css('display','none');
-        
+
     } 
     
 
