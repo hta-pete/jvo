@@ -472,6 +472,9 @@ form input[type="text"] {
   background: white;
   border-radius: 6px;
   font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 form select {
   display: block;
@@ -485,7 +488,12 @@ form select {
   border-radius: 6px;
   box-shadow: none;
   background-color: white;
-  background-image: none;
+  background-image: url(../img/select-arrows.png);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 form button {
   display: block;
@@ -565,15 +573,9 @@ form#form-job-search .col-input input[type="text"] {
   padding: 0 10px;
   margin-bottom: 0;
   border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 form#form-job-search .col-input select {
   border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 @media (max-width: 768px) {
   form#form-job-search .col-input {

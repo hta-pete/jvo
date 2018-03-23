@@ -380,6 +380,9 @@ form{
         background:white;
         border-radius:6px;
         font-size:14px;
+        -webkit-appearance: none;
+        -moz-appearance:    none;
+        appearance:         none;
     } 
     select {
         display:block;
@@ -393,7 +396,12 @@ form{
         border-radius:6px;
         box-shadow: none;
         background-color: white;
-        background-image: none;
+        background-image: url(../img/select-arrows.png);
+        background-repeat:no-repeat;
+        background-position:right 5px center;
+        -webkit-appearance: none;
+        -moz-appearance:    none;
+        appearance:         none;
     }
     button{
         display:block;
