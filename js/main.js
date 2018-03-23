@@ -4,11 +4,11 @@ $(function(){
     
     $('.mobile-filter-toggle button').on('click', function(){
 
-        if( !$('.job-filter-column').is(':visible') ){
+        
 
-            $('.job-filter-column').css('display','block');
+            $('.job-filter-column').slideToggle('fast');
 
-        } 
+         
 
     });
 
@@ -16,7 +16,7 @@ $(function(){
 
         if( $window.width() < 1110 ){
 
-            $('.job-filter-column').css('display','none');
+            $('.job-filter-column').slideUp('fast');
 
         }
 
@@ -36,9 +36,9 @@ $(function(){
     $window.on('resize', function(){
 
         if( $window.width() > 1110 ){
-            $('.job-filter-column').css('display','block');
+            $('.job-filter-column').slideDown('fast');
         } else{
-            $('.job-filter-column').css('display','none');
+            $('.job-filter-column').slideUp('fast');
         }
 
         $('#mobile-nav, .mobile-nav-btn, #main').removeClass('active');
@@ -47,7 +47,7 @@ $(function(){
     });
     
     if( $window.width() < 1110 ){
-        $('.job-filter-column').css('display','none');
+        $('.job-filter-column').slideUp('fast');
     } 
     
 

@@ -599,7 +599,6 @@ JOB FILTER COLUMN
 
 –––––––––––––––––––––––––––––––– */
 .job-filter-column {
-  display: block;
   width: 250px;
   margin-right: 20px;
   float: left;
