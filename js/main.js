@@ -22,11 +22,11 @@ $(function(){
 
         if( $(".job-filter-column").css("float") == "none" ){
         
-            $('.job-filter-column').css('display','none');
+            $('#form-job-filters').css('display','none');
 
         } else{
 
-            $('.job-filter-column').css('display','block');
+            $('#form-job-filters').css('display','block');
 
         }
 
@@ -35,13 +35,27 @@ $(function(){
     
     $('.mobile-filter-toggle button').on('click', function(){
 
-        if( !$('.job-filter-column').is(':visible') ){
+        if( !$('#form-job-filters').is(':visible') ){
 
-            $('.job-filter-column').css('display','block');
+            $('#form-job-filters').css('display','block');
 
         } else{
 
-            $('.job-filter-column').css('display','none');
+            $('#form-job-filters').css('display','none');
+
+        }
+
+    });
+
+    $('.quick-contact-toggle button').on('click', function(){
+
+        if( !$('#form-quick-contact').is(':visible') ){
+
+            $('#form-quick-contact').css('display','block');
+
+        } else{
+
+            $('#form-quick-contact').css('display','none');
 
         }
 
@@ -51,7 +65,7 @@ $(function(){
 
         if( $(".job-filter-column").css("float") == "none" ){
 
-            $('.job-filter-column').css('display','none');
+            $('#form-job-filters, #form-quick-contact').css('display','none');
 
         }
 

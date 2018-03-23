@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body> 
+
+	<div id="mobile-nav">
+		<nav>
+			<ul>
+				<li><a href="all-jobs.html">All Jobs</a></li>
+				<li><a href="featured-jobs.html">Featured Jobs</a></li>
+				<li><a href="">Carriers</a></li>
+				<li><a href="">Jobs by State</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<header>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="mobile-nav-btn"><span></span><span></span><span></span></div>
+				<div class="logo"><a href="index.html"><img src="img/jvo-logo.png" height="90"></a></div>
+				<nav>
+					<ul>
+						<li><a href="all-jobs.html">All Jobs</a></li>
+						<li><a href="featured-jobs.html">Featured Jobs</a></li>
+						<li><a href="">Carriers</a></li>
+						<li><a href="">Jobs by State</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div id="main">
+
+		<div class="carrier-banner" style="background-image:url(img/banner-averitt.jpg);"></div>
+
+		<!-- Job Listings -->
+		<section class="job-listings">
+			<div class="container">
+				<div class="row clearfix">
+					
+					<!-- Job Filter Column -->
+					<div class="job-filter-column">
+						<!-- Job Filter Form -->
+						<div class="mobile-filter-toggle"><button>Filter Jobs</button></div>
+						<form id="form-job-filters">
+							<div class="filter">
+								<h4>Jobs Near Me</h4>
+								<input type="text" placeholder="Enter Zipcode">
+								<select>
+									<option>Choose Hiring Radius</option>
+									<option>25 miles</option>
+									<option>50 miles</option>
+									<option>75 miles</option>
+									<option>100 miles</option>
+									<option>200 miles</option>
+								</select>	
+							</div>
+							<div class="filter">
+								<h4>Categories</h4>	
+								<select>
+									<option>All Categories</option>
+									<option>CDL A</option>
+									<option>CDL Grads</option>
+									<option>CDL OTR Driver</option>
+									<option>Company Driver</option>
+									<option>Dedicated Driving Jobs</option>
+									<option>Independent Contractor</option>
+									<option>Intermodal Jobs</option>
+									<option>Lease Purchase</option>
+									<option>Local Jobs</option>
+									<option>OTR Positions</option>
+									<option>Owner Operator</option>
+									<option>Regional</option>
+									<option>Solo Driving Jobs</option>
+									<option>Students</option>
+									<option>Supply Chain Driver</option>
+									<option>Teams</option>
+									<option>Urgent</option>
+								</select>	
+							</div>
+							
+							<div class="filter-buttons clearfix">
+								<button type="submit">Search</button><div class="btn-cancel">Cancel</div>
+							</div>
+						</form>
+						<!-- End Job Filter Form -->
+
+						<!-- Ad -->
+						<div class="ad">
+							<img src="img/jvo-ad-250x250.jpg">
+							<span>Advertisement</span>
+						</div>    
+					</div>
+					<!-- End Job Filter Column -->
+                    <!-- Job List Column -->
+					<div id="job-column">
+
+						<!-- Quick Contact Form -->
+						<div class="quick-contact-toggle"><button>Quick Apply</button></div>
+						<form id="form-quick-contact">
+							<div class="field-group clearfix">
+								<div class="quick-contact-logo"><img src="img/logo-averitt.jpg"></div>	
+								<div class="row clearfix">
+									<div class="col-1-2"><input type="text" placeholder="First name"></div>
+							        <div class="col-1-2"><input type="text" placeholder="Last name"></div>			
+								</div>				
+								<input type="text" placeholder="City">
+								<div class="row clearfix">							
+								    <div class="col-1-2">
+								    	<select>
+											<option>State</option>
+											<option>Alabama</option>
+										</select>	
+								    </div>
+								    <div class="col-1-2"><input type="text" placeholder="Zipcode"></div>
+							    </div>							
+								<input type="email" placeholder="Email">							
+								<input type="text" placeholder="Phone">
+						    	<select>
+									<option>Verifiable Driving Exp.</option>
+									<option>None</option>
+									<option>4-12 months</option>
+									<option>12 months or more</option>
+									<option>2 years or more</option>
+								</select>	  
+							</div>
+							<div class="radio-group">  
+						    	<label>Have a current CDL?</label>
+						    	<ul>
+						    		<li><input type="radio" name="cdl"><span>Yes</span></li>
+						    		<li><input type="radio" name="cdl"><span>No</span></li>
+						    	</ul>
+							</div>
+							<div class="radio-group">  
+						    	<label>Have a HazMat endorsement?</label>
+						    	<ul>
+						    		<li><input type="radio" name="hazmat"><span>Yes</span></li>
+						    		<li><input type="radio" name="hazmat"><span>No</span></li>
+						    	</ul>
+							</div>
+							<div class="radio-group">  
+						    	<label>In the last 5 years, have you had a DUI, been charged with reckless driving, or had license suspended for a moving violation?</label>
+						    	<ul>
+						    		<li><input type="radio" name="violation"><span>Yes</span></li>
+						    		<li><input type="radio" name="violation"><span>No</span></li>
+						    	</ul>
+							</div>
+							<div class="checkbox-group">  
+						    	<input type="checkbox" name="violation" checked><span> Have a recruiter from Averitt contact me</span>
+							</div>
+							<div class="button clearfix">
+								<button type="submit">Send to Recruiter</button>
+							</div>
+						</form>
+						<!-- End Quick Contact Form -->
+
+						<div class="single-job">
+							<h2 class="job-title">OTR Truck Driver Wanted</h2>
+							
+							<span class="phone-tag">Call Today!</span>
+							<span class="job-phone">888-555-5555</span>
+							<a href=""><button>Apply Now</button></a>
+
+							<div class="job-locations">
+								<strong>Location</strong><br>
+								Austin, TX, Plano, TX, Dallas, TX, Longview, TX, Fort Worth, TX, Waco, TX, Beaumont, TX
+							</div>
+							<div class="job-radius">
+								<strong>Hiring Radius</strong><br>
+								50 miles
+							</div>
+
+							<div class="job-description">
+								<p>Attention Drivers! We're offering a <strong>$2,500 sign-on BONUS</strong> for qualified drivers through March 31, 2018! ($1,250 at 90 days and $1,250 at 180 days!)- excluding students.</p>	
+								<p>Now hiring Drivers with 4+ months of tractor trailer experience & recent trucking school graduates! 
+If less than 1 year of solo driving experience, we have a training program tailored just for you. (see below)</p>	
+								<p>Don't have a CDL? Check out our approved driving schools for a quality school near you to get your CDL. After completion, We'll get you started in a professional driving career with a $4,800 tuition assistance bonus! If you have GI Bill funds available we have an On-The-Job-Training Program for you!</p>	
+								<p>Our Dedicated Flex Driver position is an exciting one that offers a good balance of driving for a variety of dedicated customers all while enjoying the benefits of a flexible work schedule.</p>
+								<br>
+								<strong>This Position Entails:</strong>
+								<ul>
+									<li>- Experienced drivers average $60,000+ per year</li>
+									<li>- Student drivers average $57,000 per year</li>
+									<li>- Generally home every week - rarely out two weeks.</li>
+									<li>- Detention pay, Breakdown pay, and Layover pay</li>
+									<li>- Paid 4 day orientation in Cookeville, TN with lodging, transportation and all meals provided.</li> 
+								</ul>
+								<br>
+								<strong>Paid Training Programs</strong>
+								<p><strong>Driving School Grads:</strong> Must have graduated from one of our approved truck driving schools in the previous 180 days.
+Students will also earn a $4,800 tuition assistance bonus! Payable after completing orientation at a rate of $150 per month for the first 12 months and $250 for months 13 - 24. After training you will start at .41 cpm; .42 cpm after 12 months; .44 cpm after 18 months; .46 cpm after 2 years Student drivers average $57,000 per year.</p>
+                                <p><strong>Trainee:</strong> If you have less than 12 months solo driving experience OR have been outside of the truck for a while, we have a paid training program tailored for each level of experience. Your recruiter will be able to tell you the best training program for you. After training you will start at .44cpm. Regardless of the amount of training needed you will be paid six hundred dollars per week while training; training time can range from 1-6 weeks.</p>
+
+							</div>
+							
+
+							<span class="phone-tag">Call Today!</span>
+							<span class="job-phone">888-555-5555</span>
+							<a href=""><button>Apply Now</button></a>
+
+							<span class="job-carrier">Job posted by <a href=""><img src="img/logo-averitt.jpg"></a></span>
+
+							<div id="map">
+								<img src="img/map.png">
+							</div>
+
+						</div>
+					</div>
+					<!-- Job List Column -->
+				</div>
+		
+			</div>
+		</section>
+		<!-- End Job Listings -->
+
+		<footer>
+			<div class="container">
+				<ul class="footer-menu">
+					<li><a href="all-jobs.html">All Jobs</a></li>
+					<li><a href="featured-jobs.html">Featured Jobs</a></li>
+					<li><a href="">Carriers</a></li>
+					<li><a href="">Jobs by State</a></li>
+				</ul>
+				<img src="img/jvo-logo-footer.png" height="75">
+				<span class="copyright">&copy; 2018 JobviewOnline.com &nbsp;|&nbsp; <a href="">Privacy Policy</a></span>
+			</div>
+		
+	    </footer>
+			
+	</div><!-- end #main -->
+	
+	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
