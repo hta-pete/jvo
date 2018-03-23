@@ -68,17 +68,20 @@ TYPE
 –––––––––––––––––––––––––––––––– */
 h1{
     font-size:40px;
+    line-height:40px;
     letter-spacing:-0.5px; 
     font-weight:700;
+    margin-bottom:10px;
 }
 h2{
     font-size:30px;
+    line-height:30px;
     letter-spacing:-0.5px; 
     font-weight:700;
     margin-bottom:20px;
     @media(max-width:768px){
         font-size:25px;
-        line-height:30px;
+        line-height:25px;
     }
 }
 p{
@@ -96,7 +99,7 @@ LINKS
 
 –––––––––––––––––––––––––––––––– */
 .link_primary{
-    display:block;
+    display:inline-block;
     font-size:16px;
     font-weight:700;
     color:$orange;
@@ -122,7 +125,7 @@ html,body{
 	-webkit-font-smoothing:antialiased;
     font-family:"Roboto", sans-serif;
     font-weight:500;
-    background:#111;
+    background:#ebebeb;
     &.no-scroll{
         overflow:hidden;
     }
@@ -206,7 +209,7 @@ header{
     ul{
         li{
             display:block;
-            font-size:16px;
+            font-size:18px;
             font-weight:700;
             padding:20px 10px;
             border-bottom:1px solid #ebebeb;
@@ -411,41 +414,7 @@ form{
     }
 }
 
-form#form-job-search{
-    width:100%;
-    max-width:738px;
-    margin:0 auto 30px auto;
-    .col-input{
-        position:relative;
-        width:39.25%;
-        margin-right:0.75%;
-        float:left;
-        box-shadow:0 1px 2px 0 rgba(0,0,0,0.25);
-        input[type="text"]{
-            padding:0 10px;
-            margin-bottom:0;
-            border:none;
-        } 
-        select{
-           border:none; 
-        }
-        @media(max-width:768px){
-            width:100%;
-            margin-right:0;
-            &:last-of-type{
-                margin-top:10px;
-            }
-        }
-    }
-    button{
-        border:none;
-        box-shadow:0 1px 2px 0 rgba(0,0,0,0.25);
-         @media(max-width:768px){
-            width:100%;
-            margin-top:10px; 
-        }
-    } 
-}
+
 
 
 

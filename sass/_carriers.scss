@@ -1,0 +1,39 @@
+.featured-carriers{
+    padding:90px 0;
+    background:white;
+    .row{
+        max-width:710px;
+        margin:30px auto 0 auto;
+        @media(max-width:600px){
+            max-width:350px;
+        }
+    }
+    .col-1-4{
+        border-right:1px solid #ebebeb;
+        padding:20px 0;
+        &:last-child{
+            border-right:none;
+        }
+        a{
+            @include transition(opacity 0.6s $easeOutExpo);
+            &:hover{
+                @include opacity(0.6);
+            }
+        }
+        img{
+            width:100%;
+        }
+        @media(max-width:600px){
+            width:50%;
+            &:nth-child(2){
+                border-right:none;
+            }
+            &:nth-child(1), &:nth-child(2){
+                border-bottom:1px solid #ebebeb;
+            }
+        }
+    }
+    p{
+        color:#777;
+    }
+}

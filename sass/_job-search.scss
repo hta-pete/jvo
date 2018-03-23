@@ -1,0 +1,66 @@
+#job-search{
+    background:#ebebeb;
+    @media(max-width:768px){
+        background:#333;
+    }
+    &.hero{
+        text-align:center;
+        color:white;
+        padding:120px 0;
+        background:#ebebeb url(../img/hero-home.jpg) no-repeat center;
+        background-size:cover;
+        @media(max-width:768px){
+            padding:30px 0 10px 0;
+            h1{
+                font-size:30px;
+                line-height:30px;
+            }
+        }
+        @media(max-width:480px){
+            padding:20px 0 5px 0;
+            h1{
+                font-size:22px;
+                line-height:22px;
+            }
+        }
+    }
+}
+form#form-job-search{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+    padding:20px;
+    @media(max-width:768px){
+        padding:10px;
+    }
+    .col-input{
+        position:relative;
+        width:39.25%;
+        margin-right:0.75%;
+        float:left;
+        box-shadow:0 1px 2px 0 rgba(0,0,0,0.25);
+        input[type="text"]{
+            padding:0 10px;
+            margin-bottom:0;
+            border:none;
+        } 
+        select{
+           border:none; 
+        }
+        @media(max-width:768px){
+            width:100%;
+            margin-right:0;
+            &:last-of-type{
+                margin-top:10px;
+            }
+        }
+    }
+    button{
+        border:none;
+        box-shadow:0 1px 2px 0 rgba(0,0,0,0.25);
+         @media(max-width:768px){
+            width:100%;
+            margin-top:10px; 
+        }
+    } 
+}

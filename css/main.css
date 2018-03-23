@@ -81,12 +81,15 @@ TYPE
 –––––––––––––––––––––––––––––––– */
 h1 {
   font-size: 40px;
+  line-height: 40px;
   letter-spacing: -0.5px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 30px;
+  line-height: 30px;
   letter-spacing: -0.5px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -94,7 +97,7 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 25px;
-    line-height: 30px;
+    line-height: 25px;
   }
 }
 
@@ -114,7 +117,7 @@ LINKS
 
 –––––––––––––––––––––––––––––––– */
 .link_primary {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   font-weight: 700;
   color: #fc6c22;
@@ -140,7 +143,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  background: #111;
+  background: #ebebeb;
 }
 html.no-scroll, body.no-scroll {
   overflow: hidden;
@@ -254,7 +257,7 @@ header nav li a.active {
 }
 #mobile-nav ul li {
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   padding: 20px 10px;
   border-bottom: 1px solid #ebebeb;
@@ -506,10 +509,50 @@ form button:hover {
   background: #f25403;
 }
 
+#job-search {
+  background: #ebebeb;
+}
+@media (max-width: 768px) {
+  #job-search {
+    background: #333;
+  }
+}
+#job-search.hero {
+  text-align: center;
+  color: white;
+  padding: 120px 0;
+  background: #ebebeb url(../img/hero-home.jpg) no-repeat center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  #job-search.hero {
+    padding: 30px 0 10px 0;
+  }
+  #job-search.hero h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  #job-search.hero {
+    padding: 20px 0 5px 0;
+  }
+  #job-search.hero h1 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
 form#form-job-search {
   width: 100%;
-  max-width: 738px;
-  margin: 0 auto 30px auto;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  form#form-job-search {
+    padding: 10px;
+  }
 }
 form#form-job-search .col-input {
   position: relative;
@@ -553,20 +596,25 @@ JOB LISTINGS
 –––––––––––––––––––––––––––––––– */
 .job-listings {
   background: #ebebeb;
-  padding: 20px 0 60px 0;
+  padding: 30px 0 90px 0;
 }
 @media (max-width: 1110px) {
   .job-listings {
-    padding: 20px 0 10px 0;
+    padding: 30px 0 10px 0;
   }
 }
 @media (max-width: 768px) {
   .job-listings {
-    padding: 10px 0 5px 0;
+    padding: 20px 0 10px 0;
   }
 }
 .job-listings h2.search-description {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .job-listings h2.search-description {
+    margin-bottom: 20px;
+  }
 }
 .job-listings h2.search-description span {
   font-size: 18px;
@@ -591,6 +639,11 @@ JOB LISTINGS
   .job-listings .container {
     width: 100%;
   }
+}
+
+.home .job-listings {
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 /* ––––––––––––––––––––––––––––––––
@@ -772,6 +825,19 @@ JOB LIST COLUMN
 #job-list-column .job h2.job-title a:hover {
   text-decoration: underline;
 }
+#job-list-column .job span.featured-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+#job-list-column .job span.featured-tag a {
+  color: white;
+  background: #1b7de4;
+  padding: 3px 6px 2px 6px;
+}
 #job-list-column .job span.job-carrier {
   font-size: 13px;
   font-weight: 400;
@@ -800,6 +866,21 @@ JOB LIST COLUMN
   line-height: 18px;
   font-weight: 400;
   color: #999;
+}
+#job-list-column .job .job-locations strong {
+  color: #252525;
+  font-weight: 700;
+}
+#job-list-column .job .job-radius {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #999;
+}
+#job-list-column .job .job-radius strong {
+  color: #252525;
+  font-weight: 700;
 }
 #job-list-column .ad {
   padding: 20px 20px 5px 20px;
@@ -856,6 +937,82 @@ PAGINATION
 }
 .pagination li i {
   font-size: 11px;
+}
+
+.featured-carriers {
+  padding: 90px 0;
+  background: white;
+}
+.featured-carriers .row {
+  max-width: 710px;
+  margin: 30px auto 0 auto;
+}
+@media (max-width: 600px) {
+  .featured-carriers .row {
+    max-width: 350px;
+  }
+}
+.featured-carriers .col-1-4 {
+  border-right: 1px solid #ebebeb;
+  padding: 20px 0;
+}
+.featured-carriers .col-1-4:last-child {
+  border-right: none;
+}
+.featured-carriers .col-1-4 a {
+  -webkit-transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.featured-carriers .col-1-4 a:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.featured-carriers .col-1-4 img {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .featured-carriers .col-1-4 {
+    width: 50%;
+  }
+  .featured-carriers .col-1-4:nth-child(2) {
+    border-right: none;
+  }
+  .featured-carriers .col-1-4:nth-child(1), .featured-carriers .col-1-4:nth-child(2) {
+    border-bottom: 1px solid #ebebeb;
+  }
+}
+.featured-carriers p {
+  color: #777;
+}
+
+.popular-searches {
+  padding: 90px 0;
+  border-top: 1px solid #ebebeb;
+  background: white;
+}
+.popular-searches .row {
+  margin-top: 30px;
+}
+.popular-searches li {
+  display: block;
+  margin: 5px 0;
+}
+.popular-searches a {
+  color: #fc6c22;
+  font-size: 14px;
+  font-weight: 700;
+}
+.popular-searches a:hover {
+  text-decoration: underline;
+}
+.popular-searches h3 {
+  font-size: 22px;
+  color: #777;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
