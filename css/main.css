@@ -606,6 +606,7 @@ JOB FILTER COLUMN
 }
 @media (max-width: 1110px) {
   .job-filter-column {
+    display: none;
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
@@ -719,7 +720,7 @@ JOB FILTER COLUMN
   height: 40px;
   border: none;
   border-radius: 6px;
-  background: yellow;
+  background: #1b7de4;
   color: white;
   font-weight: 700;
   font-size: 16px;
