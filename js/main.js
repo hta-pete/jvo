@@ -16,7 +16,7 @@ $(function(){
 
         if( $window.width() < 1110 ){
 
-            $('.job-filter-column').slideToggle('fast');
+            $('.job-filter-column').css('display','none');
 
         }
 
