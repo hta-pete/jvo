@@ -9,6 +9,12 @@
         padding:120px 0;
         background:#ebebeb url(../img/hero-home.jpg) no-repeat center;
         background-size:cover;
+        @media(max-width:1330px){
+            padding:90px 0;
+        }
+        @media(max-width:1110px){
+            padding:60px 0;
+        }
         @media(max-width:768px){
             padding:30px 0 10px 0;
             h1{

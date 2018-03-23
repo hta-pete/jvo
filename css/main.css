@@ -532,6 +532,16 @@ form button:hover {
   background: #ebebeb url(../img/hero-home.jpg) no-repeat center;
   background-size: cover;
 }
+@media (max-width: 1330px) {
+  #job-search.hero {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 1110px) {
+  #job-search.hero {
+    padding: 60px 0;
+  }
+}
 @media (max-width: 768px) {
   #job-search.hero {
     padding: 30px 0 10px 0;
