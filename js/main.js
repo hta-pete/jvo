@@ -48,7 +48,7 @@ $(function(){
     
     if( $window.width() < 1110 ){
         //$('.job-filter-column').css('display','none');
-        $('.btn-cancel').trigger('click');
+        
     } 
     
 
