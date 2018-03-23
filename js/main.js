@@ -1,6 +1,30 @@
 $(function(){
 	
     var $window = $(window);
+
+    $window.on('resize', function(){
+
+        $('#mobile-nav, .mobile-nav-btn, #main').removeClass('active');
+        $('body').removeClass('no-scroll');
+
+        checkSize();
+
+    });
+
+    function checkSize(){
+
+        if( $(".job-filter-column").css("float") == "none" ){
+        
+            $('.job-filter-column').css('display','none');
+
+        } else{
+
+            $('.job-filter-column').css('display','block');
+
+        }
+
+    }
+    checkSize();
     
     $('.mobile-filter-toggle button').on('click', function(){
 
@@ -36,31 +60,7 @@ $(function(){
 
     });
 
-     
-    $window.on('resize', function(){
-
-        $('#mobile-nav, .mobile-nav-btn, #main').removeClass('active');
-        $('body').removeClass('no-scroll');
-
-        checkSize();
-
-    });
-
-    function checkSize(){
-
-        if( $(".job-filter-column").css("float") == "none" ){
-        
-            $('.job-filter-column').css('display','none');
-
-        } else{
-
-            $('.job-filter-column').css('display','block');
-
-        }
-
-    }
-    checkSize();
-
+    
 	
 });
 
