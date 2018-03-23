@@ -565,9 +565,15 @@ form#form-job-search .col-input input[type="text"] {
   padding: 0 10px;
   margin-bottom: 0;
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 form#form-job-search .col-input select {
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 @media (max-width: 768px) {
   form#form-job-search .col-input {
