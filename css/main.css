@@ -522,7 +522,7 @@ form button:hover {
 }
 @media (max-width: 768px) {
   #job-search {
-    background: #333;
+    background: #5b7582;
   }
 }
 #job-search.hero {
