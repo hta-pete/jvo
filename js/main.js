@@ -4,15 +4,11 @@ $(function(){
     
     $('.mobile-filter-toggle button').on('click', function(){
 
-        if( $('.job-filter-column').is(':visible') ){
-
-            $('.job-filter-column').css('display','none');
-
-        } else{
+        if( !$('.job-filter-column').is(':visible') ){
 
             $('.job-filter-column').css('display','block');
 
-        }
+        } 
 
     });
 
