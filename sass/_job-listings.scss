@@ -40,6 +40,12 @@ JOB LISTINGS
 .home .job-listings{
     padding-top:60px;
     padding-bottom:120px;
+    @media(max-width:1110px){
+        padding:30px 0 20px 0;
+    }
+    @media(max-width:768px){
+        padding:20px 0 10px 0;
+    }
 }
 /* ––––––––––––––––––––––––––––––––
 

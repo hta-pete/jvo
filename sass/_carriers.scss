@@ -1,6 +1,9 @@
 .featured-carriers{
-    padding:90px 0;
+    padding:90px 20px;
     background:white;
+    @media(max-width:768px){
+        padding:60px 20px;
+    }
     .row{
         max-width:710px;
         margin:30px auto 0 auto;

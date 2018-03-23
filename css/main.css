@@ -645,6 +645,16 @@ JOB LISTINGS
   padding-top: 60px;
   padding-bottom: 120px;
 }
+@media (max-width: 1110px) {
+  .home .job-listings {
+    padding: 30px 0 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .home .job-listings {
+    padding: 20px 0 10px 0;
+  }
+}
 
 /* ––––––––––––––––––––––––––––––––
 
@@ -940,8 +950,13 @@ PAGINATION
 }
 
 .featured-carriers {
-  padding: 90px 0;
+  padding: 90px 20px;
   background: white;
+}
+@media (max-width: 768px) {
+  .featured-carriers {
+    padding: 60px 20px;
+  }
 }
 .featured-carriers .row {
   max-width: 710px;
@@ -989,9 +1004,14 @@ PAGINATION
 }
 
 .popular-searches {
-  padding: 90px 0;
+  padding: 90px 20px;
   border-top: 1px solid #ebebeb;
   background: white;
+}
+@media (max-width: 768px) {
+  .popular-searches {
+    padding: 60px 20px;
+  }
 }
 .popular-searches .row {
   margin-top: 30px;
