@@ -32,7 +32,7 @@ $(function(){
 
     });
 
-    /* 
+     
     $window.on('resize', function(){
 
         if( $window.width() > 1110 ){
@@ -51,7 +51,7 @@ $(function(){
     } else{
         $('.job-filter-column').css('display','none');
     }
-    */
+    
 
 	
 });
