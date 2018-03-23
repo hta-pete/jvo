@@ -40,10 +40,12 @@ JOB FILTER COLUMN
 
 –––––––––––––––––––––––––––––––– */
 .job-filter-column{
+    display:block;
     width:250px;
     margin-right:20px;
     float:left;
     @media(max-width:1110px){
+        display:none;
         width:100%;
         margin-right:0;
         margin-bottom:20px;
