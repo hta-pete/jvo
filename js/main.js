@@ -1,13 +1,20 @@
 $(function(){
 	
-    var $window = $(window);
+    var $window     = $(window);
+    var cachedWidth = $window.width();
 
-    $window.on('resize', function(){
+    $window.resize(function(){
+
+        var newWidth = $window.width();
+
+        if(newWidth !== cachedWidth){
+
+            checkSize();
+            cachedWidth = newWidth;
+        }
 
         $('#mobile-nav, .mobile-nav-btn, #main').removeClass('active');
         $('body').removeClass('no-scroll');
-
-        checkSize();
 
     });
 
