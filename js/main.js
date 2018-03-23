@@ -46,11 +46,9 @@ $(function(){
 
     });
     
-    if( $window.width() > 1110 ){
-        $('.job-filter-column').css('display','block');
-    } else{
+    if( $window.width() < 1110 ){
         $('.job-filter-column').css('display','none');
-    }
+    } 
     
 
 	
